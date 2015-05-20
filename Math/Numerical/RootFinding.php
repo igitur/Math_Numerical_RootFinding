@@ -75,7 +75,7 @@ class Math_Numerical_RootFinding
      * @access public
      * @static
      */
-    function &factory($method, $options = null)
+    static function &factory($method, $options = null)
     {
         $method = strtolower(trim($method));
         if (!isset($GLOBALS['_Math_Numerical_RootFinding_drivers'][$method])) {
